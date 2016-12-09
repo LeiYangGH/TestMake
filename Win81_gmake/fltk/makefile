@@ -1,0 +1,4 @@
+winbox.exe:winbox.cpp
+	"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe" -MD /c "winbox.cpp" /I "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include" 
+
+	"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe" /out:"winbox.exe" /MANIFEST /NXCOMPAT   /libpath:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib" /libpath:"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib" /libpath:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.14393.0\ucrt\x86" /DYNAMICBASE "fltkd.lib" "wsock32.lib" "comctl32.lib" "fltkjpegd.lib" "fltkimagesd.lib" "kernel32.lib" "user32.lib" "gdi32.lib" "winspool.lib" "comdlg32.lib" "advapi32.lib" "shell32.lib" "ole32.lib" "oleaut32.lib" "uuid.lib" "odbc32.lib" "odbccp32.lib" /DEBUG /MACHINE:X86 /NODEFAULTLIB:"libcd.lib" /INCREMENTAL  /SUBSYSTEM:WINDOWS  /TLBID:1  "winbox.obj" 
